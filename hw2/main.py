@@ -19,4 +19,5 @@ def gen_tex_table(table):
 
 
 if __name__ == '__main__':
-    print(gen_tex_table([[0, 1, 2], [0, 1, 2], [0, 1, 2]]))
+    with open('out.tex', 'w') as f:
+        f.write(gen_tex_table([[0, 1, 2], [0, 1, 2], [0, 1, 2]]))
